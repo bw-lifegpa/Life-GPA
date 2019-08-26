@@ -11,12 +11,16 @@ function Login({ errors, touched }) {
         <div className='login-page'>
             <h2 className='login-header'>Welcome Back!</h2>
             <Form className='login-form-field' >
-                {touched.username && errors.username && <p>{errors.username}</p>}
-                Username or Email: 
-                <Field type= 'username' name='username' placeholder='Username' />
-                {touched.password && errors.password && <p>{errors.password}</p>}
-                Password: 
-                <Field type= 'password' name='password' placeholder='password' />
+                <div className='form-field'>
+                    {touched.username && errors.username && <p>{errors.username}</p>}
+                    Username or Email: 
+                    <Field type= 'username' name='username' placeholder='Username' />
+                </div>
+                <div className='form-field'>
+                    {touched.password && errors.password && <p>{errors.password}</p>}
+                    Password: 
+                    <Field type= 'password' name='password' placeholder='Password' />
+                    </div>
                 <button className='button' type='submit'>Get Ro Tracking</button>
 
             </Form>

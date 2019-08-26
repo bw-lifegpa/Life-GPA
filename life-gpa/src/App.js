@@ -12,8 +12,8 @@ function App() {
       <div className="App">
         <div className='login-form-page'>
           <Route extact path ='/' component={FormikLogin} />
-          <PrivateRoute extact path='/dashboard' component={Dashboard} />
         </div>
+        <PrivateRoute extact path='/dashboard' component={Dashboard} />
       </div>
     </Router>
 
