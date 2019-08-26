@@ -1,0 +1,17 @@
+.login-page{
+    border: 2px solid red;
+    width: 600px;
+    margin: 0 25%;
+    background: white;
+    position: absolute;
+    top: 40px;
+
+}
+.login-header{
+    font-size: 1.6rem
+}
+.login-form-field{
+    display: flex;
+    flex-direction: column; 
+    margin: 0 20%;
+}
