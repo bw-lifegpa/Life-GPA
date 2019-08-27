@@ -1,5 +1,5 @@
 header {
-  height: 163px;
+  height: 150px;
   background-color: #ffe785;
 }
 /*
@@ -117,12 +117,8 @@ li:hover {
   transform: none;
 }
 .pitch {
-  height: 500px;
-  border: 1px solid red;
-}
-.pitch .banner {
   height: 600px;
-  width: 100vw;
+  border: 1px solid red;
 }
 footer {
   text-align: center;
