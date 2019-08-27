@@ -116,9 +116,6 @@ li:hover {
 #menuToggle input:checked ~ ul {
   transform: none;
 }
-.pitch {
-  border: 1px solid red;
-}
 .banner {
   height: 450px;
   width: 100vw;
@@ -128,6 +125,25 @@ li:hover {
   flex-direction: row;
   justify-content: space-evenly;
   text-align: center;
+}
+.pitchOne {
+  position: absolute;
+  top: 250px;
+  right: 0px;
+  font-size: 1.95rem;
+  width: 670px;
+  font-family: fontStyle;
+  color: #33558b;
+}
+.pitchTwo {
+  position: absolute;
+  top: 350px;
+  right: 0px;
+  font-size: 1.6rem;
+  width: 300px;
+  margin-right: 170px;
+  font-family: fontStyle;
+  color: #33558b;
 }
 footer {
   text-align: center;
