@@ -120,6 +120,12 @@ li:hover {
   height: 600px;
   border: 1px solid red;
 }
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
 footer {
   text-align: center;
 }
