@@ -10,18 +10,15 @@
  */
 
 a {
-  color: @snow;
+  color: @text;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 li:hover {
-  color: @banana;
+  color: @base;
 }
-.menuContainer {
-  width: 100vw;
-  height: 30%;
-}
+
 #menuToggle {
   display: block;
   position: relative;
@@ -38,34 +35,25 @@ li:hover {
   width: 40px;
   height: 32px;
   position: absolute;
-  top: -7px;
+  top: -8px;
   left: -5px;
-
   cursor: pointer;
-
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
-
   -webkit-touch-callout: none;
 }
-
 /*
  * Just a quick hamburger
  */
 #menuToggle span {
-  display: block;
+  display: flex;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
-  position: relative;
-
-  background: @blk;
+  background: @buttonBg;
   border-radius: 3px;
-
   z-index: 1;
-
   transform-origin: 4px 0px;
-
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
@@ -85,7 +73,7 @@ li:hover {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: @blk;
+  background: @menuState;
 }
 
 /*
@@ -110,23 +98,23 @@ li:hover {
 #menu {
   display: flex;
   justify-content: space-evenly;
-  border-radius: 10px;
+  position: absolute;
+  border-radius: 5px;
   width: 100vw;
-  margin: 0px 0 0 -100px;
   height: 70px;
-  background: @blk;
+  background: @menu;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
 
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(100%, 0);
 
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 #menu li {
-  font-family: @style;
+  font-family: @fontStyle;
   font-size: 1.5rem;
   padding: 25px;
 }
