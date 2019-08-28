@@ -257,8 +257,23 @@ a:hover {
   padding: 0px;
 }
 footer {
+  color: #33558b;
   position: bottom;
   text-align: center;
+}
+.footerText {
+  display: flex;
+  justify-content: space-between;
+}
+.footerText .middleBox p {
+  padding: 15px;
+  font-size: 1rem;
+}
+.footerText .leftBox {
+  text-decoration: underline;
+}
+.footerText .rightBox {
+  text-decoration: underline;
 }
 * {
   box-sizing: border-box;
