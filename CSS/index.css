@@ -1,5 +1,6 @@
 header {
   height: 100px;
+  width: 100vw;
   background-color: #fdf5e5;
 }
 .lifeIcon {
@@ -25,7 +26,7 @@ a {
   transition: color 0.3s ease;
 }
 a:hover {
-  color: #ffe785;
+  color: fae9c6;
 }
 #menuToggle {
   display: block;
@@ -135,8 +136,9 @@ a:hover {
   transform: none;
 }
 .banner {
-  height: 50%;
+  box-shadow: 5px 0px 5px 1px rgba(0, 0, 0, 0.4);
   width: 100vw;
+  height: 480px;
 }
 .pitchOne {
   position: absolute;
@@ -170,8 +172,8 @@ a:hover {
   margin-left: 150px;
 }
 .join {
+  color: #eedd93;
   background-color: #234059;
-  color: #ffe785;
   cursor: pointer;
   width: 190px;
   height: 50px;
@@ -182,7 +184,7 @@ a:hover {
 }
 .join:hover {
   background-color: #989898;
-  color: #ffe785;
+  color: fae9c6;
 }
 .iosDownload {
   background-color: black;
@@ -195,7 +197,7 @@ a:hover {
 }
 .iosDownload:hover {
   background-color: #989898;
-  color: #ffe785;
+  color: fae9c6;
 }
 .androidDownload {
   background-color: black;
@@ -209,27 +211,53 @@ a:hover {
 }
 .androidDownload:hover {
   background-color: #989898;
-  color: #ffe785;
+  color: fae9c6;
 }
 .featuresTitle {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #33558b;
 }
 .featuresSection {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-  height: 50%;
+  height: 600px;
+  width: 100vw;
   text-align: center;
-  font-size: 1.4rem;
-  line-height: 1.5;
-  padding: 150px;
+  font-size: 1.2rem;
+  padding: 50px;
+  box-shadow: 5px 0px 5px 1px rgba(0, 0, 0, 0.4);
 }
 .featuresSection h5 {
-  font-size: 1.4rem;
+  font-weight: bold;
+}
+.featuresSection h5,
+.featuresSection p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #33558b;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 5px;
+  width: 250px;
+}
+.article1 img,
+.article2 img,
+.article3 img {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.4);
+  padding: 35px;
+  height: 200px;
+}
+.article1 p,
+.article2 p,
+.article3 p {
+  padding: 0px;
 }
 footer {
-  height: 20px;
+  position: bottom;
   text-align: center;
 }
 * {
