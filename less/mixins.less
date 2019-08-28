@@ -1,16 +1,50 @@
+.custom-btn1(@bgcolor:#FFBF27, @width:190px, @font-color:#000) {
+  background-color: @buttonBg;
+  color: @base;
 
-.custom-btn(@bgcolor:#FFBF27, @width:200px, @font-color:#000) {  
-  background-color: @bgcolor;
-  margin: 0 10px 20px;
   cursor: pointer;
   width: @width;
-  height: 45px;
-  border-radius: 10px;
-  color: @font-color;
-  .font-styles(2rem, @style);
+  height: 50px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+
+ margin-left: 250px;
+  margin-bottom: 40px;
 
   &:hover {
-    background-color: @blk;
+    background-color: @menuState;
+    color: @base;
+  }
+}
+
+.custom-btn2(@bgcolor:#FFBF27, @width:170px, @font-color:#000) {
+  background-color: @blk;
+  color: @snow;
+
+  cursor: pointer;
+  width: @width;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: @menuState;
+    color: @base;
+  }
+}
+
+.custom-btn3(@bgcolor:#FFBF27, @width:170px, @font-color:#000) {
+  background-color: @blk;
+  color: @snow;
+  margin-left: 40px;
+  cursor: pointer;
+  width: @width;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: @menuState;
     color: @base;
   }
 }

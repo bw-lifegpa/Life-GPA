@@ -1,6 +1,13 @@
 header {
-  height: 150px;
-  background-color: #ffe785;
+  height: 100px;
+  background-color: #fdf5e5;
+}
+.lifeIcon {
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4);
+  margin: 10px;
+  height: 70px;
+  left: 20px;
 }
 /*
  * Made by Erik Terwan
@@ -13,30 +20,31 @@ header {
  * prefixes.
  */
 a {
-  color: #33558b;
   text-decoration: none;
+  color: #232323;
   transition: color 0.3s ease;
 }
-li:hover {
+a:hover {
   color: #ffe785;
 }
 #menuToggle {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  display: block;
   position: relative;
-  top: 50px;
+  top: 80px;
   left: 50px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
 }
 #menuToggle input {
+  display: block;
   width: 40px;
   height: 32px;
   position: absolute;
-  top: -8px;
+  top: -7px;
   left: -5px;
+  top: -130px;
+  left: 800px;
   cursor: pointer;
   opacity: 0;
   /* hide this */
@@ -48,10 +56,13 @@ li:hover {
  * Just a quick hamburger
  */
 #menuToggle span {
-  display: flex;
+  display: block;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
+  top: -130px;
+  left: 800px;
+  position: relative;
   background: #234059;
   border-radius: 3px;
   z-index: 1;
@@ -71,7 +82,7 @@ li:hover {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #989898;
+  background: #232323;
 }
 /*
  * But let's hide the middle one.
@@ -91,24 +102,31 @@ li:hover {
  * at the top left of the screen
  */
 #menu {
+  position: absolute;
   display: flex;
   justify-content: space-evenly;
-  position: absolute;
-  border-radius: 5px;
-  width: 100vw;
-  height: 70px;
+  flex-direction: row;
+  margin: -40px 0 0 -50px;
+  padding: 0px;
+  padding-top: 0px;
+  top: -33px;
+  border-radius: 0px 5px 5px 0px;
+  text-align: center;
   background: #ccdde8;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   transform-origin: 0% 0%;
-  transform: translate(100%, 0);
+  transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 #menu li {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  padding: 25px;
+  margin: 10px;
+  width: 150px;
+  border-radius: 10px;
+  color: #33558b;
+  padding: 10px 0;
+  font-size: 22px;
 }
 /*
  * And let's slide it in from the left
@@ -117,27 +135,23 @@ li:hover {
   transform: none;
 }
 .banner {
-  height: 450px;
+  height: 50%;
   width: 100vw;
-}
-.features {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  text-align: center;
 }
 .pitchOne {
   position: absolute;
-  top: 250px;
+  top: 200px;
   right: 0px;
   font-size: 1.95rem;
   width: 670px;
   font-family: fontStyle;
   color: #33558b;
+  font-size: 1.9rem;
+  text-align: center;
 }
 .pitchTwo {
   position: absolute;
-  top: 350px;
+  top: 290px;
   right: 0px;
   font-size: 1.6rem;
   width: 300px;
@@ -145,14 +159,77 @@ li:hover {
   font-family: fontStyle;
   color: #33558b;
 }
-.join {
+.buttons {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  top: 380px;
+  right: 170px;
+}
+.button2 {
+  margin-left: 150px;
+}
+.join {
+  background-color: #234059;
+  color: #ffe785;
   cursor: pointer;
+  width: 190px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  margin-left: 250px;
+  margin-bottom: 40px;
+}
+.join:hover {
+  background-color: #989898;
+  color: #ffe785;
+}
+.iosDownload {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  width: 170px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+.iosDownload:hover {
+  background-color: #989898;
+  color: #ffe785;
+}
+.androidDownload {
+  background-color: black;
+  color: white;
+  margin-left: 40px;
+  cursor: pointer;
+  width: 170px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+.androidDownload:hover {
+  background-color: #989898;
+  color: #ffe785;
+}
+.featuresTitle {
+  font-size: 1.9rem;
+  padding: 20px;
+}
+.featuresSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 50%;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 150px;
+}
+.featuresSection h5 {
+  font-size: 1.4rem;
 }
 footer {
+  height: 20px;
   text-align: center;
 }
 * {
@@ -160,12 +237,19 @@ footer {
 }
 html {
   font-size: 62.5%;
-  overflow: hidden;
 }
 body {
-  widows: 1000px;
+  max-width: 1000px;
+  width: 100%;
   height: 100vh;
   margin: auto;
+  background-color: #fdf5e5;
+}
+h1 {
+  font-size: 2rem;
+}
+p {
+  font-size: 2rem;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
