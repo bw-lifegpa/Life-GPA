@@ -115,3 +115,40 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .bannerContent {
+    .pitchOne {
+      display: none;
+    }
+
+    .pitchTwo {
+      margin-top: -20%;
+      font-size: 1.3rem;
+      font-family: @fontStyle;
+    }
+    .mobileText {
+      padding: 15px;
+      font-size: 1.8rem;
+      color: @text;
+      text-align: center;
+    }
+    font-size: 2rem;
+    font-family: @fontStyle;
+    .mobileText2 {
+      font-family: @fontStyle;
+      color: @text;
+      margin-top: 30%;
+      margin-right: -90px;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .mobileText,
+  .mobileText2 {
+    display: none;
+  }
+}

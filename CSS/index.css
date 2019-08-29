@@ -107,6 +107,40 @@
     margin-top: -5%;
   }
 }
+@media (max-width: 500px) {
+  .bannerContent {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .bannerContent .pitchOne {
+    display: none;
+  }
+  .bannerContent .pitchTwo {
+    margin-top: -20%;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .bannerContent .mobileText {
+    padding: 15px;
+    font-size: 1.8rem;
+    color: #33558b;
+    text-align: center;
+  }
+  .bannerContent .mobileText2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #33558b;
+    margin-top: 30%;
+    margin-right: -90px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+@media (min-width: 1000px) {
+  .mobileText,
+  .mobileText2 {
+    display: none;
+  }
+}
 header {
   width: 100vw;
   background-color: #fae9c6;
