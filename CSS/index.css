@@ -1,11 +1,11 @@
 header {
   height: 100px;
   width: 100vw;
-  background-color: #fdf5e5;
+  background-color: #fae9c6;
 }
 .lifeIcon {
   border-radius: 5px;
-  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 0px 5px 1px rgba(0, 0, 0, 0.4);
   margin: 10px;
   height: 70px;
   left: 20px;
@@ -227,7 +227,7 @@ a:hover {
   text-align: center;
   font-size: 1.2rem;
   padding: 50px;
-  box-shadow: 5px 0px 5px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 0px 20px 1px rgba(0, 0, 0, 0.4);
 }
 .featuresSection h5 {
   font-weight: bold;
@@ -239,7 +239,7 @@ a:hover {
   font-size: 1rem;
   line-height: 1.5;
   padding: 5px;
-  width: 250px;
+  width: 280px;
 }
 .article1 img,
 .article2 img,
@@ -251,15 +251,11 @@ a:hover {
   padding: 35px;
   height: 200px;
 }
-.article1 p,
-.article2 p,
-.article3 p {
-  padding: 0px;
-}
 footer {
   color: #33558b;
   position: bottom;
   text-align: center;
+  background-color: #fae9c6;
 }
 .footerText {
   display: flex;
@@ -285,7 +281,7 @@ body {
   max-width: 1000px;
   width: 100%;
   height: 100vh;
-  margin: auto;
+  margin: 0 auto;
   background-color: #fdf5e5;
 }
 h1 {
