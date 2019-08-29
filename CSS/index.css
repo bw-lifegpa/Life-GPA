@@ -159,6 +159,11 @@ header {
   background-color: #fae9c6;
   position: relative;
 }
+.topnav .signIn {
+  margin-left: 80%;
+  margin-top: 15px;
+  height: 30px;
+}
 .topnav #myLinks {
   display: none;
 }
