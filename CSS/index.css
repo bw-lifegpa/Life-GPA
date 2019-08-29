@@ -55,8 +55,8 @@ header {
   object-fit: cover;
 }
 .pitchOne {
-  position: absolute;
-  top: 200px;
+  margin: 150px;
+  float: right;
   right: 0px;
   font-size: 1.95rem;
   width: 670px;
@@ -66,19 +66,17 @@ header {
   text-align: center;
 }
 .pitchTwo {
-  position: absolute;
-  top: 290px;
+  float: right;
   right: 0px;
   font-size: 1.6rem;
   width: 300px;
-  margin-right: 170px;
+  margin-right: 350px;
+  margin-top: -100px;
   font-family: fontStyle;
   color: #33558b;
 }
 .buttons {
-  position: absolute;
   display: flex;
-  flex-direction: column;
   top: 380px;
   right: 170px;
 }
@@ -93,8 +91,8 @@ header {
   height: 50px;
   border-radius: 20px;
   font-size: 1.2rem;
-  margin-left: 250px;
-  margin-bottom: 40px;
+  margin-left: 480px;
+  margin-top: 340px;
 }
 .join:hover {
   background-color: #989898;
@@ -108,6 +106,8 @@ header {
   height: 50px;
   border-radius: 20px;
   font-size: 1rem;
+  margin-left: -430px;
+  margin-top: 420px;
 }
 .iosDownload:hover {
   background-color: #989898;
