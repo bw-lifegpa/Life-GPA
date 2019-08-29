@@ -4,6 +4,7 @@
   height: 480px;
 }
 .bannerContent {
+  position: relative;
   width: 100vw;
   height: 500px;
   background-size: 100%;
@@ -13,11 +14,11 @@
 }
 
 .pitchOne {
-  margin: 150px;
-  float: right;
-  right: 0px;
-  font-size: 1.95rem;
-  width: 670px;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 650px;
   font-family: fontStyle;
   color: @text;
   font-size: 1.9rem;
@@ -25,26 +26,37 @@
 }
 
 .pitchTwo {
-  float: right;
-  right: 0px;
-  font-size: 1.6rem;
-  width: 300px;
-  margin-right: 350px;
-  margin-top: -100px;
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  width: 200px;
   font-family: fontStyle;
   color: @text;
 }
-.buttons {
-  display: flex;
 
-  top: 380px;
-  right: 170px;
-}
-.button2 {
-  margin-left: 150px;
-}
 .join {
-  color: @bgcolor;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.iosDownload {
+  position: absolute;
+  top: 75%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+.androidDownload {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.join {
   .custom-btn1();
 }
 .iosDownload {
