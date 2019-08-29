@@ -1,9 +1,117 @@
+//banner section
 @media (max-width: 500px) {
-  .featuresSection {
-    display: flex;
-    flex-direction: column;
-  }
   .join {
     display: none;
+  }
+  .bannerContent {
+    position: relative;
+    .downloadButtons {
+      display: flex;
+
+      height: 300px;
+      width: 100vw;
+      .iosDownload {
+        height: 35px;
+        width: 130px;
+        font-size: 0.8rem;
+        position: absolute;
+        top: 60%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+      }
+      .androidDownload {
+        height: 35px;
+        width: 130px;
+        font-size: 0.8rem;
+        position: absolute;
+        top: 60%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .pitchOne {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      display: none; //come back to this
+    }
+  }
+}
+
+//features section
+@media (max-width: 500px) {
+  .featuresTitle {
+    margin-top: -25%;
+  }
+  .featuresSection {
+    .article1 {
+      margin-top: 300px;
+      height: 300px;
+      width: 200px;
+      margin: -100px;
+      img {
+        width: 150px;
+        height: 130px;
+        margin-left: -55%;
+      }
+      p {
+        text-align: left;
+        width: 300px;
+        margin-left: 50%;
+        margin-top: -7%;
+      }
+      h5 {
+        margin-left: 30%;
+        margin-top: -85%;
+      }
+    }
+
+    .article2 {
+      margin-top: 300px;
+      height: 300px;
+      width: 200px;
+      margin: -100px;
+      img {
+        width: 150px;
+        height: 150px;
+        margin-left: 90%;
+        margin-top: 150%;
+      }
+      h5 {
+        margin-left: -7%;
+        margin-top: -95%;
+      }
+      p {
+        text-align: right;
+        width: 320px;
+        margin-left: -60%;
+        margin-top: -5%;
+      }
+    }
+
+    .article3 {
+      margin-top: 300px;
+      height: 300px;
+      width: 200px;
+      margin: -100px;
+      img {
+        width: 150px;
+        height: 150px;
+        margin-left: -300%;
+        margin-top: 250%;
+      }
+      h5 {
+        margin-left: -112%;
+        margin-top: -90%;
+      }
+      p {
+        text-align: left;
+        width: 300px;
+        margin-left: -70%;
+        margin-top: -5%;
+      }
+    }
   }
 }
