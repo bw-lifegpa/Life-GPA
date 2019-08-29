@@ -46,6 +46,14 @@ header {
   width: 100vw;
   height: 480px;
 }
+.bannerContent {
+  width: 100vw;
+  height: 500px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("/images/samuel-zeller-rk_Zz3b7G2Y-unsplash.jpg");
+  object-fit: cover;
+}
 .pitchOne {
   position: absolute;
   top: 200px;
