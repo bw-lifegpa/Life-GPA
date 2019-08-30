@@ -185,7 +185,7 @@ header {
 .bannerContent {
   position: relative;
   width: 100vw;
-  height: 500px;
+  height: 50%;
   background-size: 100%;
   background-repeat: no-repeat;
   background-image: url("/images/samuel-zeller-rk_Zz3b7G2Y-unsplash.jpg");
@@ -294,6 +294,7 @@ header {
 }
 .featuresSection h5,
 .featuresSection p {
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: #33558b;
   font-size: 1rem;
