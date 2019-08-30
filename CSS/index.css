@@ -3,8 +3,150 @@
     display: flex;
     flex-direction: column;
   }
+}
+@media (max-width: 500px) {
   .join {
     display: none;
+  }
+  .topnav #myLinks a {
+    font-size: 1.3rem;
+  }
+  .bannerContent {
+    position: relative;
+  }
+  .bannerContent .downloadButtons {
+    display: flex;
+    height: 300px;
+    width: 100vw;
+  }
+  .bannerContent .downloadButtons .iosDownload {
+    height: 35px;
+    width: 130px;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  .bannerContent .downloadButtons .androidDownload {
+    height: 35px;
+    width: 130px;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 60%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+  }
+  .bannerContent .pitchOne {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .featuresTitle {
+    margin-top: -25%;
+  }
+  .featuresSection .article1 {
+    margin-top: 300px;
+    height: 300px;
+    width: 200px;
+    margin: -100px;
+  }
+  .featuresSection .article1 img {
+    width: 150px;
+    height: 130px;
+    margin-left: -55%;
+  }
+  .featuresSection .article1 p {
+    text-align: left;
+    width: 300px;
+    margin-left: 50%;
+    margin-top: -7%;
+  }
+  .featuresSection .article1 h5 {
+    margin-left: 50%;
+    margin-top: -85%;
+  }
+  .featuresSection .article2 {
+    margin-top: 300px;
+    height: 300px;
+    width: 200px;
+    margin: -100px;
+  }
+  .featuresSection .article2 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 90%;
+    margin-top: 150%;
+  }
+  .featuresSection .article2 h5 {
+    margin-left: -50%;
+    margin-top: -95%;
+  }
+  .featuresSection .article2 p {
+    text-align: right;
+    width: 320px;
+    margin-left: -60%;
+    margin-top: -5%;
+  }
+  .featuresSection .article3 {
+    margin-top: 300px;
+    height: 300px;
+    width: 200px;
+    margin: -100px;
+  }
+  .featuresSection .article3 img {
+    width: 150px;
+    height: 150px;
+    margin-left: -300%;
+    margin-top: 250%;
+  }
+  .featuresSection .article3 h5 {
+    margin-left: -70%;
+    margin-top: -90%;
+  }
+  .featuresSection .article3 p {
+    text-align: left;
+    width: 300px;
+    margin-left: -70%;
+    margin-top: -5%;
+  }
+}
+@media (max-width: 500px) {
+  .bannerContent {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .bannerContent .pitchOne {
+    display: none;
+  }
+  .bannerContent .pitchTwo {
+    margin-top: -20%;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .bannerContent .desktopFpnt {
+    display: none;
+  }
+  .bannerContent .mobileFont {
+    display: inline-block;
+  }
+  .bannerContent .mobileText {
+    font-size: 1.8rem;
+    color: #33558b;
+    text-align: center;
+  }
+  .bannerContent .mobileText2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #33558b;
+    margin-top: 40%;
+    margin-left: 30%;
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
 header {
@@ -25,6 +167,11 @@ header {
   background-color: #fae9c6;
   position: relative;
 }
+.topnav .signIn {
+  float: right;
+  height: 30px;
+  margin-right: 20px;
+}
 .topnav #myLinks {
   display: none;
 }
@@ -41,19 +188,20 @@ header {
 .topnav a:hover {
   color: black;
 }
-.banner {
-  box-shadow: 5px 0px 5px 1px rgba(0, 0, 0, 0.4);
-  width: 100vw;
-  height: 480px;
-}
 .bannerContent {
   position: relative;
   width: 100vw;
-  height: 500px;
+  height: 50%;
   background-size: 100%;
   background-repeat: no-repeat;
   background-image: url("/images/samuel-zeller-rk_Zz3b7G2Y-unsplash.jpg");
-  object-fit: cover;
+  object-fit: fill;
+}
+.desktopFont {
+  display: inline-block;
+}
+.mobileFont {
+  display: none;
 }
 .pitchOne {
   position: absolute;
@@ -104,7 +252,7 @@ header {
   font-size: 1.2rem;
 }
 .join:hover {
-  background-color: #989898;
+  background-color: #5c7c99;
   color: fae9c6;
 }
 .iosDownload {
@@ -142,17 +290,16 @@ header {
 .featuresSection {
   display: flex;
   justify-content: space-evenly;
-  height: 600px;
   width: 100vw;
   text-align: center;
   font-size: 1.2rem;
-  box-shadow: 5px 0px 20px 1px rgba(0, 0, 0, 0.4);
 }
 .featuresSection h5 {
   font-weight: bold;
 }
 .featuresSection h5,
 .featuresSection p {
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: #33558b;
   font-size: 1rem;
@@ -166,8 +313,7 @@ header {
   margin-top: 100px;
   margin-bottom: 50px;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.4);
-  padding: 45px;
+  padding: 10px;
   height: 200px;
 }
 footer {
@@ -176,6 +322,10 @@ footer {
   position: bottom;
   text-align: center;
   background-color: #fae9c6;
+}
+footer a {
+  color: #33558b;
+  text-decoration: none;
 }
 .footerText {
   display: flex;
@@ -198,6 +348,7 @@ html {
   font-size: 62.5%;
 }
 body {
+  overflow-x: hidden;
   max-width: 1000px;
   width: 100vw;
   height: 100vh;

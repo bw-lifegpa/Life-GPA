@@ -1,9 +1,158 @@
+//banner section
 @media (max-width: 500px) {
-  .featuresSection {
-    display: flex;
-    flex-direction: column;
-  }
   .join {
     display: none;
+  }
+  .topnav #myLinks {
+    a {
+      font-size: 1.3rem;
+    }
+  }
+  .bannerContent {
+    position: relative;
+    .downloadButtons {
+      display: flex;
+
+      height: 300px;
+      width: 100vw;
+      .iosDownload {
+        height: 35px;
+        width: 130px;
+        font-size: 0.8rem;
+        position: absolute;
+        top: 60%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+      }
+      .androidDownload {
+        height: 35px;
+        width: 130px;
+        font-size: 0.8rem;
+        position: absolute;
+        top: 60%;
+        left: 78%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .pitchOne {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      display: none; //come back to this
+    }
+  }
+}
+
+//features section
+@media (max-width: 500px) {
+  .featuresTitle {
+    margin-top: -25%;
+  }
+  .featuresSection {
+    .article1 {
+      margin-top: 300px;
+      height: 300px;
+      width: 200px;
+      margin: -100px;
+      img {
+        width: 150px;
+        height: 130px;
+        margin-left: -55%;
+      }
+      p {
+        text-align: left;
+        width: 300px;
+        margin-left: 50%;
+        margin-top: -7%;
+      }
+      h5 {
+        margin-left: 50%;
+        margin-top: -85%;
+      }
+    }
+
+    .article2 {
+      margin-top: 300px;
+      height: 300px;
+      width: 200px;
+      margin: -100px;
+      img {
+        width: 150px;
+        height: 150px;
+        margin-left: 90%;
+        margin-top: 150%;
+      }
+      h5 {
+        margin-left: -50%;
+        margin-top: -95%;
+      }
+      p {
+        text-align: right;
+        width: 320px;
+        margin-left: -60%;
+        margin-top: -5%;
+      }
+    }
+
+    .article3 {
+      margin-top: 300px;
+      height: 300px;
+      width: 200px;
+      margin: -100px;
+      img {
+        width: 150px;
+        height: 150px;
+        margin-left: -300%;
+        margin-top: 250%;
+      }
+      h5 {
+        margin-left: -70%;
+        margin-top: -90%;
+      }
+      p {
+        text-align: left;
+        width: 300px;
+        margin-left: -70%;
+        margin-top: -5%;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .bannerContent {
+    .pitchOne {
+      display: none;
+    }
+
+    .pitchTwo {
+      margin-top: -20%;
+      font-size: 1.3rem;
+      font-family: @fontStyle;
+    }
+    .desktopFpnt {
+      display: none;
+    }
+    .mobileFont {
+      display: inline-block;
+    }
+
+    .mobileText {
+      font-size: 1.8rem;
+      color: @text;
+      text-align: center;
+    }
+    font-size: 2rem;
+    font-family: @fontStyle;
+    .mobileText2 {
+      font-family: @fontStyle;
+      color: @text;
+      margin-top: 40%;
+      margin-left: 30%;
+      font-size: 1.5rem;
+      text-align: center;
+    }
   }
 }
