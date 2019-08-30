@@ -120,8 +120,13 @@
     font-size: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
   }
+  .bannerContent .desktopFpnt {
+    display: none;
+  }
+  .bannerContent .mobileFont {
+    display: inline-block;
+  }
   .bannerContent .mobileText {
-    padding: 15px;
     font-size: 1.8rem;
     color: #33558b;
     text-align: center;
@@ -129,16 +134,10 @@
   .bannerContent .mobileText2 {
     font-family: Arial, Helvetica, sans-serif;
     color: #33558b;
-    margin-top: 30%;
-    margin-right: -90px;
+    margin-top: 40%;
+    margin-left: 30%;
     font-size: 1.5rem;
     text-align: center;
-  }
-}
-@media (min-width: 1000px) {
-  .mobileText,
-  .mobileText2 {
-    display: none;
   }
 }
 header {
@@ -188,6 +187,12 @@ header {
   background-repeat: no-repeat;
   background-image: url("/images/samuel-zeller-rk_Zz3b7G2Y-unsplash.jpg");
   object-fit: fill;
+}
+.desktopFont {
+  display: inline-block;
+}
+.mobileFont {
+  display: none;
 }
 .pitchOne {
   position: absolute;

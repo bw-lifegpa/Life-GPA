@@ -127,8 +127,14 @@
       font-size: 1.3rem;
       font-family: @fontStyle;
     }
+    .desktopFpnt {
+      display: none;
+    }
+    .mobileFont {
+      display: inline-block;
+    }
+
     .mobileText {
-      padding: 15px;
       font-size: 1.8rem;
       color: @text;
       text-align: center;
@@ -138,17 +144,10 @@
     .mobileText2 {
       font-family: @fontStyle;
       color: @text;
-      margin-top: 30%;
-      margin-right: -90px;
+      margin-top: 40%;
+      margin-left: 30%;
       font-size: 1.5rem;
       text-align: center;
     }
-  }
-}
-
-@media (min-width: 1000px) {
-  .mobileText,
-  .mobileText2 {
-    display: none;
   }
 }
