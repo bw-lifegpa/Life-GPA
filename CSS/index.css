@@ -1,4 +1,10 @@
 @media (max-width: 500px) {
+  .featuresSection {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
   .join {
     display: none;
   }
@@ -284,7 +290,6 @@ header {
 .featuresSection {
   display: flex;
   justify-content: space-evenly;
-  height: 600px;
   width: 100vw;
   text-align: center;
   font-size: 1.2rem;
