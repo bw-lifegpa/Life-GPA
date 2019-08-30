@@ -1,4 +1,10 @@
 @media (max-width: 500px) {
+  .featuresSection {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
   .join {
     display: none;
   }
@@ -160,9 +166,8 @@ header {
 }
 .topnav .signIn {
   float: right;
-  height: 25px;
+  height: 30px;
   margin-right: 20px;
-  margin-top: 14px;
 }
 .topnav #myLinks {
   display: none;
@@ -282,7 +287,6 @@ header {
 .featuresSection {
   display: flex;
   justify-content: space-evenly;
-  height: 600px;
   width: 100vw;
   text-align: center;
   font-size: 1.2rem;
@@ -314,6 +318,10 @@ footer {
   position: bottom;
   text-align: center;
   background-color: #fae9c6;
+}
+footer a {
+  color: #33558b;
+  text-decoration: none;
 }
 .footerText {
   display: flex;
