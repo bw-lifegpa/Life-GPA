@@ -185,11 +185,11 @@ header {
 .bannerContent {
   position: relative;
   width: 100vw;
-  height: 50%;
+  height: 500px;
   background-size: 100%;
   background-repeat: no-repeat;
   background-image: url("/images/samuel-zeller-rk_Zz3b7G2Y-unsplash.jpg");
-  object-fit: fill;
+  object-fit: cover;
 }
 .desktopFont {
   display: inline-block;
@@ -285,7 +285,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   width: 100vw;
-  height: 600px;
+  height: 100vh;
   text-align: center;
   font-size: 1.2rem;
 }
@@ -305,16 +305,16 @@ header {
 .article1 img,
 .article2 img,
 .article3 img {
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 50px;
   border-radius: 20px;
   padding: 10px;
-  height: 200px;
+  height: 250px;
+  width: 250px;
 }
 footer {
   width: 100vw;
   color: #33558b;
-  position: bottom;
   text-align: center;
   background-color: #fae9c6;
 }
