@@ -59,7 +59,7 @@
     margin-top: -7%;
   }
   .featuresSection .article1 h5 {
-    margin-left: 30%;
+    margin-left: 50%;
     margin-top: -85%;
   }
   .featuresSection .article2 {
@@ -75,7 +75,7 @@
     margin-top: 150%;
   }
   .featuresSection .article2 h5 {
-    margin-left: -7%;
+    margin-left: -50%;
     margin-top: -95%;
   }
   .featuresSection .article2 p {
@@ -97,7 +97,7 @@
     margin-top: 250%;
   }
   .featuresSection .article3 h5 {
-    margin-left: -112%;
+    margin-left: -70%;
     margin-top: -90%;
   }
   .featuresSection .article3 p {
@@ -160,9 +160,8 @@ header {
 }
 .topnav .signIn {
   float: right;
-  height: 25px;
+  height: 30px;
   margin-right: 20px;
-  margin-top: 14px;
 }
 .topnav #myLinks {
   display: none;
@@ -292,6 +291,7 @@ header {
 }
 .featuresSection h5,
 .featuresSection p {
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: #33558b;
   font-size: 1rem;
@@ -315,6 +315,10 @@ footer {
   text-align: center;
   background-color: #fae9c6;
 }
+footer a {
+  color: #33558b;
+  text-decoration: none;
+}
 .footerText {
   display: flex;
   justify-content: space-between;
@@ -336,6 +340,7 @@ html {
   font-size: 62.5%;
 }
 body {
+  overflow-x: hidden;
   max-width: 1000px;
   width: 100vw;
   height: 100vh;
