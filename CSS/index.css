@@ -2,6 +2,9 @@
   .join {
     display: none;
   }
+  .topnav #myLinks a {
+    font-size: 1.3rem;
+  }
   .bannerContent {
     position: relative;
   }
